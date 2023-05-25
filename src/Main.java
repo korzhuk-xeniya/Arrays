@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1_2();
@@ -63,7 +65,7 @@ public class Main {
             }
         }
         System.out.println(" ");
-        for (int month = year.length-1; month >= 0; month--) {
+        for (int month = year.length - 1; month >= 0; month--) {
             if (month > 0) {
                 System.out.print(year[month] + ", ");
             } else {
@@ -76,6 +78,16 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
+        int[] numbers = new int[3];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 == 1) {
+                numbers[i]++;
+            }
+        }
+        System.out.print(Arrays.toString(numbers));
 
     }
 }
